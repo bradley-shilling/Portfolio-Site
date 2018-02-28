@@ -1,0 +1,205 @@
+
+/* ------------ grid system ---------------- */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: red;
+  }
+  
+  
+  /*@media (min-width: 768px) {
+    .container {
+      display: grid;
+      grid-template-columns: 200px 1fr 200px;
+      grid-template-rows: auto 1fr auto;
+  
+    }
+  }
+  */
+
+  /*
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 20px 40px 100vh 40px;
+}
+
+header {
+    grid-column: span 12;
+}
+menu {
+    grid-column: span 12;
+}
+.content {
+    grid-column: span 12;
+}
+footer {
+    grid-column: span 12;
+}
+
+*/
+
+
+header {
+  background-color: blue;
+}
+nav {
+  background-color: fuchsia;
+}
+footer {
+  background-color: greenyellow;
+}
+main {
+  background-color: firebrick;
+}
+/* ----------- Full width section -------------- */
+section.in-grid{
+max-width: 1200px;
+  padding-left: 3em;
+  padding-right: 3em;
+  margin-left: auto;
+  margin-right: auto;
+}
+section.full-width {
+  padding-left: 3em;
+  padding-right: 3em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ----------- break point for all grid itens mobile ------------- */
+$breakpoint-m: 48em;
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1em;
+}
+
+.width-1\/12 {
+  grid-column: span 1;
+}
+
+.width-2\/12 {
+  grid-column: span 2;
+}
+
+.width-3\/12 {
+  grid-column: span 3;
+}
+
+.width-4\/12 {
+  grid-column: span 4;
+}
+
+.width-5\/12 {
+  grid-column: span 5;
+}
+
+.width-6\/12 {
+  grid-column: span 6;
+}
+
+.width-7\/12 {
+  grid-column: span 7;
+}
+
+.width-8\/12 {
+  grid-column: span 8;
+}
+
+.width-9\/12 {
+  grid-column: span 9;
+}
+
+.width-10\/12 {
+  grid-column: span 10;
+}
+
+.width-11\/12 {
+  grid-column: span 11;
+}
+
+.width-12\/12 {
+  grid-column: span 12;
+}
+
+.width-1\/12\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-column: span 1;
+  }
+}
+
+.width-2\/12\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-column: span 2;
+  }
+}
+
+.width-3\/12\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-column: span 3;
+  }
+}
+
+.width-4\/12\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-column: span 4;
+  }
+}
+
+.width-5\/12\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-column: span 5;
+  }
+}
+
+.width-6\/12\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-column: span 6;
+  }
+}
+
+.width-7\/12\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-column: span 7;
+  }
+}
+
+.width-8\/12\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-column: span 8;
+  }
+}
+
+.width-9\/12\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-column: span 9;
+  }
+}
+
+.width-10\/12\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-column: span 10;
+  }
+}
+
+.width-11\/12\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-column: span 11;
+  }
+}
+
+.width-12\/12\@m {
+  @media (min-width: $breakpoint-m) {
+    grid-column: span 12;
+  }
+}
+
+.grid__item {
+  padding: 1em;
+  background: #efefef;
+  text-align: center;
+}
+
